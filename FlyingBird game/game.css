@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #87CEEB, #f0f8ff);
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+}
+
+#game-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  object-fit: cover;
+  background: url('media/17876776.jpg') no-repeat center center / cover;
+}
+
+#bird {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background: url('media/bird-unscreen.gif') no-repeat center center / cover;
+  animation: fly 1s infinite linear;
+}
+
+#crash {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: url('media/boom.gif') no-repeat center center / cover;
+  display: none;
+}
+
+.obstacle {
+  position: absolute;
+  width: 50px;
+  background-color: green;
+  animation: move 1.5s infinite linear;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
+              -5px -5px 10px rgba(255, 255, 255, 0.5);
+  border: 2px solid black;
+  will-change: transform;
+}
+
+@keyframes fly {
+  0% { transform: translateY(-10px); }
+  50% { transform: translateY(10px); }
+  100% { transform: translateY(-10px); }
+}
+
+@keyframes move {
+  0% { right: -50px; }
+  100% { right: 100%; }
+}
+
+#game-over {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  animation: gameOver 1s infinite;
+}
+
+@keyframes gameOver {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 1);
+  }
+}
+
+#restart-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: restartBtn 1s infinite;
+}
+
+@keyframes restartBtn {
+  0%, 100% {
+    transform: scale(1);
+    background-color: #4CAF50;
+  }
+  50% {
+    transform: scale(1.1);
+    background-color: #45A049;
+  }
+}
+
+#scoreboard {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-size: 24px;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  border: 2px solid white; /* Added white border */
+  font-weight: bold; /* Added bold font style */
+  animation: scoreboard 2s infinite;
+}
+
+@keyframes scoreboard {
+  0%, 100% {
+    transform: rotateY(0deg);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  }
+  50% {
+    transform: rotateY(360deg);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+  }
+}
+
+#final-score {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.control-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.control-btn svg {
+  fill: #ff7b00;
+  width: 100%;
+  height: 100%;
+}
+
+#start-dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  z-index: 1000;
+}
+
+#start-dialog h1 {
+  margin-bottom: 20px;
+}
+
+#start-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background-color: #ff7b00;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#start-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+#start-btn svg {
+  fill: white;
+  width: 40px;
+  height: 40px;
+}
