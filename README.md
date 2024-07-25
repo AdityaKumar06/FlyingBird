@@ -4,11 +4,12 @@
 
 
 
-The game includes animations and transitions.
-It features pause and play options.
-There is a start button to begin the game.
-The game includes a scoreboard.
-After crashing, there is a restart button to play again.
+# The game includes animations and transitions.
+
+# It features pause and play options.
+# There is a start button to begin the game.
+# The game includes a scoreboard.
+# After crashing, there is a restart button to play again.
 
 
 
