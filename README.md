@@ -4,7 +4,7 @@
 
 
 
-# The game includes animations and transitions.
+<h5>The game includes animations and transitions.</h5>
 
 # It features pause and play options.
 # There is a start button to begin the game.
