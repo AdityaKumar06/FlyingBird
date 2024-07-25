@@ -6,10 +6,10 @@
 
 <h5>The game includes animations and transitions.</h5>
 
-# It features pause and play options.
-# There is a start button to begin the game.
-# The game includes a scoreboard.
-# After crashing, there is a restart button to play again.
+<h4>It features pause and play options.</h4>
+<h4>There is a start button to begin the game.</h4>
+<h4>The game includes a scoreboard.</h4>
+ <h4>After crashing, there is a restart button to play again.</h4>
 
 
 
