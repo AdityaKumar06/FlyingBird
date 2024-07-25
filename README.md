@@ -1,4 +1,4 @@
-# FlyingBird
+# FlyingBird Game
 
 <h3>I have a flying bird game developed using:</h3>
 <ul>
