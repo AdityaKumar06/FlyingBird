@@ -1,8 +1,11 @@
 # FlyingBird
 
-<h1>I have a flying bird game developed using HTML, CSS, and primarily JavaScript.</h1>
-
-
+<h3>I have a flying bird game developed using:</h3>
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ul>
 
 <h4>The game includes animations and transitions.</h4>
 
