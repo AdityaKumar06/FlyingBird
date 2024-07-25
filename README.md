@@ -5,8 +5,7 @@
 
 
 
-![Screenshot 2024-07-25 180343](https://github.com/user-attachments/assets/9fc197e5-ff36-4c44-9c13-e922e98ea144)
-
+![sssssssssss](https://github.com/user-attachments/assets/1d00a0ff-8815-4135-b515-c1a5f4d222f2)
 
 
 
